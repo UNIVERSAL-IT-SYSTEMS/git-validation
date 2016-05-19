@@ -7,6 +7,7 @@ import (
 	"os"
 	"strings"
 
+	_ "github.com/coreos/git-validation/rules/subsystem"
 	_ "github.com/vbatts/git-validation/rules/danglingwhitespace"
 	_ "github.com/vbatts/git-validation/rules/dco"
 	_ "github.com/vbatts/git-validation/rules/shortsubject"
