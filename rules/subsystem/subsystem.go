@@ -26,7 +26,7 @@ func init() {
 func ValidateSubsystem(c git.CommitEntry) (vr validate.Result) {
 	if ok := subsystemPattern.MatchString(c["subject"]); !ok {
 		vr.Pass = false
-		vr.Msg = "commit subject should be of the form '<subsytem>: <commit-msg>'"
+		vr.Msg = "commit subject should be of the form '<subsystem>: <commit-msg>'"
 
 		return
 	}
